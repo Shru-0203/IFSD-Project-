@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background: #111;
+  padding: 18px 40px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}

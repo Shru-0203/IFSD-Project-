@@ -1,0 +1,124 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8fafc;
+  color: #222;
+  scroll-behavior: smooth;
+}
+h1, h2, h3 { letter-spacing: 1px; }
+
+header {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo img { width: 40px; }
+.logo h1 { color: #ffcc00; font-size: 1.5em; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav a:hover { color: #ffcc00; }
+
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1600&auto=format&fit=crop') no-repeat center/cover;
+  height: 100vh;
+  display: flex; justify-content: center; align-items: center;
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+}
+.hero-content h2 { font-size: 3.2em; text-shadow: 3px 3px 10px #000; }
+.hero-content p { font-size: 1.2em; margin: 10px 0 25px; }
+.btn {
+  background: #ffcc00;
+  border: none;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover { background: #ffb300; }
+
+
+section { padding: 100px 80px; text-align: center; }
+.section-title {
+  font-size: 2.4em;
+  color: #0a3d62;
+  margin-bottom: 40px;
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+}
+.hotel-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.4s;
+}
+.hotel-card:hover { transform: translateY(-10px); }
+.hotel-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.hotel-card h3 { margin: 10px 0; color: #0a3d62; }
+.hotel-card p { color: #555; }
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, select, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+textarea { resize: none; }
+.booking-msg {
+  margin-top: 15px;
+  font-weight: 600;
+  color: green;
+}
+
+
+footer {
+  background: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  nav a { display: inline-block; margin: 5px 8px; }
+  section { padding: 70px 30px; }
+}

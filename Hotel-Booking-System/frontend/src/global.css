@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  z-index: 100;
+}
+
+.nav nav a {
+  color: #5ca7ff;
+  margin-left: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav nav a:hover {
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("https://cdn-icons-png.flaticon.com/512/684/684908.png") center/40% no-repeat,
+              #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 65px;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 10%;
+}
+
+/* HOTELS */
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.hotel-card {
+  background: white;
+  color: black;
+  border-radius: 12px;
+  text-align: center;
+  padding: 12px;
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}

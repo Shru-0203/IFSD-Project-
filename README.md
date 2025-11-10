@@ -9,9 +9,14 @@ A full-stack web application designed to simplify hotel room reservations and ma
 
  Features:
 
-User registration and login with secure authentication
-Search and filter hotels based on preferences
-Real-time room availability checking
-Booking confirmation and cancellation options
-Admin dashboard for managing rooms, hotels, and users
-Responsive frontend built with modern UI components
+1.User registration and login with secure authentication
+
+2.Search and filter hotels based on preferences
+
+3.Real-time room availability checking
+
+4.Booking confirmation and cancellation options
+
+5.Admin dashboard for managing rooms, hotels, and users
+
+6.Responsive frontend built with modern UI components
